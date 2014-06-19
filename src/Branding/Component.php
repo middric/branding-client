@@ -2,14 +2,13 @@
 
 namespace Branding;
 
+
 class Component {
-    private $_template;
+    private $_markup;
     private $_styles;
 
-    private $_html;
-
     public function __construct($component) {
-        $this->_template = $component['template'];
+        $this->_markup = $component['markup'];
         $this->_styles = $component['styles'];
     }
 
@@ -18,11 +17,6 @@ class Component {
     }
 
     public function html($arguments = array()) {
-        if (!$this->_html) {
-            $m = new Mustache_Engine;
-            $this->_html = $m->render($this->_template, $arguments);
-        }
-
-        return $this->_html;
+        return $this->_markup;
     }
 }
