@@ -2,7 +2,7 @@
 
 use \Guzzle\Http\Client as Guzzle;
 
-class Client {
+class Branding {
     private $_host;
 
     public function __construct($host) {

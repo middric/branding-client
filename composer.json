@@ -7,5 +7,10 @@
     },
     "config": {
         "github-protocols": ["https"]
+    },
+    "autoload": {
+        "psr-0": {
+            "Branding": "src/"
+        }
     }
 }
