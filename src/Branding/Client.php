@@ -1,8 +1,10 @@
 <?php
 
+namespace Branding;
+
 use \Guzzle\Http\Client as Guzzle;
 
-class Branding {
+class Client {
     private $_host;
 
     public function __construct($host) {
@@ -10,7 +12,7 @@ class Branding {
     }
 
     public function get($component) {
-        $guzzle = new Guzzle('http://192.168.1.6:8080');
+        $guzzle = new Guzzle($this->_host);
         $request = $guzzle->get('/component/' . $component);
         $response = $request->send()->json();
 

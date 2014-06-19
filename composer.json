@@ -3,7 +3,8 @@
     "description": "",
     "license": "proprietary",
     "require": {
-        "guzzlehttp/guzzle": "3.*"
+        "guzzlehttp/guzzle": "3.*",
+        "mustache/mustache": "~2.5"
     },
     "config": {
         "github-protocols": ["https"]
