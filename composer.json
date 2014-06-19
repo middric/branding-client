@@ -1,0 +1,11 @@
+{
+    "name": "middric/branding-client",
+    "description": "",
+    "license": "proprietary",
+    "require": {
+        "guzzlehttp/guzzle": "3.*"
+    },
+    "config": {
+        "github-protocols": ["https"]
+    }
+}
